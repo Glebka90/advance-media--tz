@@ -4,6 +4,7 @@
     --sub-color: #687186;
     --destinations-color: #fff;
     --number-color: #2A3848;
+    --footer-color: #919498;
 }
 
 html {
@@ -23,6 +24,13 @@ a {
 
 ul {
     list-style: none;
+}
+
+hr {
+    width: 95%;
+    margin: 0;
+    border: none;
+    background-color: #3B454F;
 }
 
 .button {
@@ -345,6 +353,132 @@ ul {
 }
 
 .footer {
+    padding: 62px 0 75px;
     background: #272F37;
+}
 
+.logo__text {
+    width: 222px;
+    margin-top: 35px;
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 17px;
+    color: #919498;
+}
+
+.footer__wrapper {
+    display: flex;
+    gap: 0 195px;
+}
+
+.footer__menu-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__menu {
+    width: 660px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__info {
+    width: 100%;
+}
+
+.footer__heading-list {
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    /*  */
+}
+
+.footer__heading-list::after {
+    min-width: 100%;
+    height: 3px;
+    background-color: #3B454F;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.footer__heading-menu-list {
+    width: 660px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__heading-menu-list h4 {
+    width: 170px;
+    height: 24px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.footer__heading-support {
+    width: 230px;
+    height: 24px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+
+}
+
+.footer__heading-menu-list h4:first-child {
+    width: 119px;
+}
+
+
+.footer__support {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.support__button {
+    margin: 11px 0 45px;
+    width: 196px;
+    height: 50px;
+}
+
+.support__email {
+    font-family: 'Segoe UI';
+    font-size: 18px;
+    line-height: 36px;
+    color: var(--footer-color);
+}
+
+.footer__menu-item {
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 36px;
+    color: var(--footer-color);
+}
+
+
+.footer__menu-list {
+    max-width: 173px;
+}
+
+.social-heading {
+    height: 24px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.social__list {
+    margin-top: 17px;
+}
+
+.social__link+.social__link {
+    margin-left: 10px;
 }
